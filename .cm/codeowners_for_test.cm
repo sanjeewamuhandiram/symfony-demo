@@ -11,9 +11,12 @@ automations:
     # Add a specified user and team as reviewers.
     # Customize the reviewers to match your organization
     run:
-      - action: add-reviewers@v1
+      - action: add-label@v1
         args:
-          reviewers: [sanjeewamuhandiram/my-team]
+          label: api-change
+      #- action: add-reviewers@v1
+        #args:
+          #reviewers: [sanjeewamuhandiram/my-team]
       - action: add-comment@v1
         args:
           comment: |
