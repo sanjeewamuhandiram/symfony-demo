@@ -7,17 +7,13 @@ automations:
   review_ui:
     # Triggered for PRs that contain any changes to JavaScript files inside the `src/ui` directory.
     if:
-      - {{ branch.base | match(term='main') | nope }}
+      - {{ branch.base | match('main') }}
     # Add a specified user and team as reviewers.
     # Customize the reviewers to match your organization
     run:
       - action: add-label@v1
         args:
           label: api-change
-      - action: add-reviewers@v1
-        args:
-          reviewers: [sanjeewamadhuranga, sanjeewamuhandiram/my-team]
-      - action: add-comment@v1
-        args:
-          comment: |
-            The Security team has automatically been added for review because this PR contains changes to components inside `/src/app/auth`
+      #- action: add-reviewers@v1
+        #args:
+          #reviewers: [sanjeewamadhuranga, sanjeewamuhandiram/my-team]
