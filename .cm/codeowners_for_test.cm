@@ -17,7 +17,3 @@ automations:
       #- action: add-reviewers@v1
         #args:
           #reviewers: [sanjeewamadhuranga, sanjeewamuhandiram/my-team]
-      - action: add-comment@v1
-        args:
-          comment: |
-            The Security team has automatically been added for review because this PR contains changes to components inside `/src/app/auth`
