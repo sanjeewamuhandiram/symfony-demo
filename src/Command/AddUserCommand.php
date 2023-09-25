@@ -7,7 +7,7 @@
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- * test 1
+ * test 2
  */
 
 namespace App\Command;
