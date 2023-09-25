@@ -15,6 +15,6 @@ automations:
       - action: add-label@v1
         args:
           label: api-change
-      #- action: add-reviewers@v1
-        #args:
-          #reviewers: [sanjeewamadhuranga, sanjeewamuhandiram/my-team]
+      - action: add-reviewers@v1
+        args:
+          reviewers: [sanjeewamuhandiram/my-team]
