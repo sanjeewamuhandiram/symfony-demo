@@ -7,8 +7,8 @@ automations:
   test:
     # Triggered for PRs that contain any changes to JavaScript files inside the `src/ui` directory.
     if:
-      #- {{ branch.base | match(list=['main']) | nope }}
-      - true
+      - {{ branch.base | match(list=['main']) | nope }}
+      #- true
     # Add a specified user and team as reviewers.
     # Customize the reviewers to match your organization
     run:
